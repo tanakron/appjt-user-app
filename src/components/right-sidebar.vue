@@ -135,16 +135,10 @@ export default {
           </div>
 
           <!-- Preloader -->
-          <h6 class="mt-3">Preloader</h6>
+          <h6 class="mt-3"></h6>
           <hr class="mt-1" />
 
-          <b-form-checkbox
-            v-model="loader"
-            name="check-button"
-            switch
-            @input="changeloader"
-            >Preloader</b-form-checkbox
-          >
+       
         </div>
         <!-- Settings -->
         <hr class="mt-0" />
@@ -152,42 +146,15 @@ export default {
 
         <div class="p-4">
           <div class="mb-2">
-            <router-link
-              to="//http://nazox.vuejs-light-h.themesdesign.in/"
-              target="_blank"
-            >
-              <img
-                src="@/assets/images/layouts/layout-4.jpg"
-                class="img-fluid img-thumbnail"
-                alt
-              />
-            </router-link>
+         
           </div>
 
           <div class="mb-2">
-            <router-link
-              to="//http://nazox.vuejs-dark-h.themesdesign.in/"
-              target="_blank"
-            >
-              <img
-                src="@/assets/images/layouts/layout-5.jpg"
-                class="img-fluid img-thumbnail"
-                alt
-              />
-            </router-link>
+         
           </div>
 
           <div class="mb-2">
-            <router-link
-              to="//http://nazox.vuejs-rtl-h.themesdesign.in/"
-              target="_blank"
-            >
-              <img
-                src="@/assets/images/layouts/layout-6.jpg"
-                class="img-fluid img-thumbnail"
-                alt
-              />
-            </router-link>
+        
           </div>
         </div>
       </div>

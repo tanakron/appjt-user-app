@@ -2,11 +2,6 @@ import store from "@/state/store";
 
 export default [
   {
-    path: "/dashboardsusers",
-    name: "home",
-    component: () => import("../views/pages/account/dashboardsusers"),
-  },
-  {
     path: "/login",
     name: "login",
     component: () => import("../views/pages/account/login"),
@@ -15,6 +10,7 @@ export default [
         // If the user is already logged in
         if (store.getters["auth/loggedIn"]) {
           // Redirect to the home page instead
+          next({ name: "home" });
         } else {
           // Continue to the login page
           next();
@@ -30,6 +26,7 @@ export default [
       beforeResolve(routeTo, routeFrom, next) {
         // If the user is already logged in
         if (store.getters["auth/loggedIn"]) {
+          // Redirect to the home page instead
           next({ name: "home" });
         } else {
           // Continue to the login page
@@ -82,4 +79,23 @@ export default [
     },
     component: () => import("../views/pages/dashboard/index"),
   },
+
+  {
+    path: "/emp_f_all",
+    name: "emp_f",
+    meta: {
+      authRequired: true,
+    },
+    component: () => import("../views/pages/emp_f/emp_f_all"),
+  },
+  {
+    path: "/listusers",
+    name: "Listusers",
+    meta: {
+      authRequired: true
+    },
+
+    component: () => import("../views/pages/emp_f/listusers"),
+  },
 ];
+

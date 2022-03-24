@@ -72,7 +72,7 @@ export default {
           <button type="button" class="btn btn-sm btn-light">Monthly</button>
         </div>
       </div>
-      <h4 class="card-title mb-4">Revenue Analytics</h4>
+      <h4 class="card-title mb-4">รายงานแจ้งลาประจำเดือน</h4>
       <div>
         <div id="line-column-chart" class="apex-charts" dir="ltr"></div>
         <apexchart
@@ -89,7 +89,7 @@ export default {
       <div class="row">
         <div class="col-sm-4">
           <div class="d-inline-flex">
-            <h5 class="mr-2">$12,253</h5>
+            <h5 class="mr-2">1200</h5>
             <div class="text-success">
               <i class="mdi mdi-menu-up font-size-14"></i>2.2 %
             </div>
@@ -103,7 +103,7 @@ export default {
               <i class="mdi mdi-circle text-primary font-size-10 mr-1"></i> This Year :
             </p>
             <div class="d-inline-flex">
-              <h5 class="mb-0 mr-2">$ 34,254</h5>
+              <h5 class="mb-0 mr-2">400</h5>
               <div class="text-success">
                 <i class="mdi mdi-menu-up font-size-14"></i>2.1 %
               </div>
@@ -116,7 +116,7 @@ export default {
               <i class="mdi mdi-circle text-success font-size-10 mr-1"></i> Previous Year :
             </p>
             <div class="d-inline-flex">
-              <h5 class="mb-0">$ 32,695</h5>
+              <h5 class="mb-0">1600</h5>
             </div>
           </div>
         </div>

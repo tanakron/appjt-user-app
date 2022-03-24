@@ -7,21 +7,21 @@ export default {
     return {
       statData: [
         {
-          title: "Number of Sales",
+          title: "พนักงานโรงงาน",
           icon: "ri-stack-line",
-          value: "1452",
+          value: "635",
           subvalue: " 2.4% "
         },
         {
-          title: "Sales Revenue",
+          title: "พนักงานออฟฟิต",
           icon: "ri-store-2-line",
-          value: "$ 38452",
+          value: "120",
           subvalue: " 2.4% "
         },
         {
-          title: "Average Price",
+          title: "มาทำงาน",
           icon: "ri-briefcase-4-line",
-          value: "$ 15.4",
+          value: "750",
           subvalue: " 2.4% "
         }
       ]
@@ -52,7 +52,7 @@ export default {
               <i class="mdi mdi-menu-up"></i>
               {{data.subvalue}}
             </span>
-            <span class="text-muted ml-2">From previous period</span>
+            <span class="text-muted ml-2">พนักงานทั้งหมด/ปี</span>
           </div>
         </div>
       </div>

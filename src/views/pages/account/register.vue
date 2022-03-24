@@ -1,6 +1,10 @@
 <script>
 import { required, email } from "vuelidate/lib/validators";
-import { notificationMethods } from "@/state/helpers";
+import {
+  authMethods,
+  authFackMethods,
+  notificationMethods,
+} from "@/state/helpers";
 export default {
   data() {
     return {
@@ -28,6 +32,8 @@ export default {
     document.body.classList.add("auth-body-bg");
   },
   methods: {
+    ...authMethods,
+    ...authFackMethods,
     ...notificationMethods,
     // Try to register the user in with the email, username
     // and password they provided.
@@ -99,16 +105,16 @@ export default {
                         <div>
                           <a href="/" class="logo">
                             <img
-                              src="@/assets/images/logo.png"
-                              height="20"
+                              src="@/assets/images/jintaibk.png"
+                              height="60"
                               alt="logo"
                             />
                           </a>
                         </div>
 
-                        <h4 class="font-size-18 mt-4">Register account</h4>
+                        <h4 class="font-size-18 mt-4">ลงทะเบียน</h4>
                         <p class="text-muted">
-                          ลงทะเบียนเพื่อเข้าระบบ
+                       ลงทะเบียนเพื่อเข้าระบบ
                         </p>
                       </div>
 
@@ -140,8 +146,7 @@ export default {
 
                         <form
                           class="form-horizontal"
-                          action="http://localhost:3000/auth/register"
-                          method="POST"
+                          @submit.prevent="tryToRegisterIn"
                         >
                           <div class="form-group auth-form-group-custom mb-4">
                             <i
@@ -151,7 +156,6 @@ export default {
                             <input
                               v-model="user.username"
                               type="text"
-                              name="username"
                               class="form-control"
                               id="username"
                               :class="{
@@ -173,7 +177,6 @@ export default {
                             <label for="useremail">Email</label>
                             <input
                               v-model="user.email"
-                              name="email"
                               type="email"
                               class="form-control"
                               id="useremail"
@@ -203,7 +206,6 @@ export default {
                             <input
                               v-model="user.password"
                               type="password"
-                              name="password"
                               class="form-control"
                               id="userpassword"
                               placeholder="Enter password"
@@ -228,6 +230,13 @@ export default {
                               Register
                             </button>
                           </div>
+
+                          <div class="mt-4 text-center">
+                            <p class="mb-0">
+                              By registering you agree to the Jintai
+                              <a href="#" class="text-primary">Terms of Use</a>
+                            </p>
+                          </div>
                         </form>
                       </div>
 
@@ -238,12 +247,13 @@ export default {
                             tag="a"
                             to="/login"
                             class="font-weight-medium text-primary"
-                            >Login</router-link
+                            >เข้าสู่ระบบ</router-link
                           >
                         </p>
                         <p>
-                          © 2022 Jintaiapp. Crafted with
-                          <i class="mdi mdi-heart text-danger"></i> by Jintai
+                          © 2020  Jintai. Crafted with
+                          <i class="mdi mdi-heart text-danger"></i> by
+                         Jintaiapp
                         </p>
                       </div>
                     </div>

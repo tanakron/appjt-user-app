@@ -14,42 +14,12 @@ export default {
         message: "",
       },
       ChatData: [
-        {
-          id: 1,
-          name: "Frank Vickery",
-          message: "Hey! I am available",
-          image: require("@/assets/images/users/avatar-2.jpg"),
-          time: "12:09",
-        },
-        {
-          id: 2,
-          align: "right",
-          name: "Ricky Clark",
-          message: "Hi, How are you? What about our next meeting?",
-          time: "10:02",
-        },
-        {
-          text: "Today",
-        },
-        {
-          id: 3,
-          name: "Frank Vickery",
-          message: "Hello!",
-          image: require("@/assets/images/users/avatar-2.jpg"),
-          time: "10:06",
-        },
-        {
-          id: 4,
-          name: "Frank Vickery",
-          message: "& Next meeting tomorrow 10.00AM",
-          image: require("@/assets/images/users/avatar-2.jpg"),
-          time: "10:06",
-        },
+    
         {
           id: 5,
           align: "right",
-          name: "Ricky Clark",
-          message: "Wow that's great",
+          name: "Admin",
+          message: "แจ้งการลา",
           time: "10:07",
         },
       ],
@@ -114,7 +84,7 @@ export default {
       <div class="user-chat-border">
         <div class="row">
           <div class="col-md-5 col-9">
-            <h5 class="font-size-15 mb-1">Frank Vickery</h5>
+            <h5 class="font-size-15 mb-1">แจ้งการลา</h5>
             <p class="text-muted mb-0">
               <i class="mdi mdi-circle text-success align-middle mr-1"></i>
               Active now

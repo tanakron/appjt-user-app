@@ -1,4 +1,5 @@
 export const menuItems = [
+
     {
         id: 1,
         label: "menuitems.menu.text",
@@ -8,70 +9,15 @@ export const menuItems = [
         id: 2,
         label: 'menuitems.dashboard.text',
         icon: 'ri-dashboard-line',
-        badge: {
-            variant: "success",
-            text: "menuitems.dashboard.badge"
-        },
+        
         link: '/'
     },
+    
+  
     {
-        id: 3,
-        label: 'menuitems.calendar.text',
-        icon: 'ri-calendar-2-line',
-        link: ''
-    },
-    {
-        id: 4,
-        label: 'menuitems.chat.text',
-        icon: 'ri-chat-1-line',
-        link: ''
-    },
-    {
-        id: 5,
-        label: 'menuitems.ecommerce.text',
-        icon: 'ri-store-2-line',
-        subItems: [
-            {
-                id: 6,
-                label: 'menuitems.ecommerce.list.products',
-                link: ''
-            },
-            {
-                id: 7,
-                label: 'menuitems.ecommerce.list.productdetail',
-                link: ''
-            },
-            {
-                id: 8,
-                label: 'menuitems.ecommerce.list.orders',
-                link: ''
-            },
-            {
-                id: 9,
-                label: 'menuitems.ecommerce.list.customers',
-                link: ''
-            },
-            {
-                id: 10,
-                label: 'menuitems.ecommerce.list.cart',
-                link: ''
-            },
-            {
-                id: 11,
-                label: 'menuitems.ecommerce.list.checkout',
-                link: ''
-            },
-            {
-                id: 12,
-                label: 'menuitems.ecommerce.list.shops',
-                link: ''
-            },
-            {
-                id: 13,
-                label: 'menuitems.ecommerce.list.addproduct',
-                link: ''
-            }
-        ]
+        id: 0,
+        label: 'ระบบการจัดการ',
+        isTitle: true
     },
     {
         id: 14,
@@ -92,322 +38,438 @@ export const menuItems = [
     },
     {
         id: 17,
-        label: 'menuitems.kanban.text',
+        label: 'KPI',
         icon: 'ri-artboard-2-line',
+        link: '/kpiview'
+    },
+    {
+        id: 17,
+        label: 'OT',
+        icon: 'dripicons-hourglass',
+        link: '/otview'
+    },
+    {
+        id: 4,
+        label: 'แชทฝ่ายบุคล',
+        icon: 'ri-chat-1-line',
         link: ''
     },
-    {
-        id: 18,
-        isLayout: true
-    },
+   
     {
         id: 19,
-        label: 'menuitems.pages.text',
+        label: 'ระบบพนักงาน',
         isTitle: true
     },
     {
         id: 20,
-        label: 'menuitems.authentication.text',
+        label: 'รายการ พนักงาน',
         icon: 'ri-account-circle-line',
         subItems: [
             {
-                id: 21,
-                label: 'menuitems.authentication.list.login',
-                link: ''
+                id: 100,
+                label: 'พนักงานโรงงานทั้งหมด',
+                link: '/fullview'
             },
             {
-                id: 22,
-                label: 'menuitems.authentication.list.register',
+                id: 101,
+                label: 'พนักงานออฟฟิตทั้งหมด',
                 link: ''
             },
-            {
-                id: 23,
-                label: 'menuitems.authentication.list.recoverpwd',
-                link: ''
-            },
-            {
-                id: 24,
-                label: 'menuitems.authentication.list.lockscreen',
-                link: ''
-            }
+            // {
+            //     id: 102,
+            //     label: 'A โรงงาน_(Document Control)',
+            //     link: ''
+            // },
+            // {
+            //     id: 103,
+            //     label: 'A โรงงาน_ซ่อมบำรุง (MT)',
+            //     link: ''
+            // },
+            // {
+            //     id: 104,
+            //     label: 'โรงงาน_Industrial Engineer',
+            //     link: ''
+            // },
+            // {
+            //     id: 105,
+            //     label: 'โรงงาน_QC ( บรรจุ)',
+            //     link: ''
+            // },
+            // {
+            //     id: 106,
+            //     label: 'โรงงาน_XRF',
+            //     link: ''
+            // },
+            // {
+            //     id: 107,
+            //     label: 'โรงงาน_เซ็นเตอร์(Center)',
+            //     link: ''
+            // },
+            // {
+            //     id: 108,
+            //     label: 'โรงงาน_แต่ง(Filling)',
+            //     link: ''
+            // },
+            // {
+            //     id: 109,
+            //     label: 'โรงงาน_แต่ง(Filling)_Laser',
+            //     link: ''
+            // },
+            // {
+            //     id: 110,
+            //     label: 'โรงงาน_แต่ง(Filling)_ยิงแป๊ก',
+            //     link: ''
+            // },
+            // {
+            //     id: 111,
+            //     label: 'โรงงาน_แผนกขัด(Polishing)',
+            //     link: ''
+            // },
+            // {
+            //     id: 112,
+            //     label: 'โรงงาน_ซ่อมงาน',
+            //     link: ''
+            // },
+            // {
+            //     id: 113,
+            //     label: 'โรงงาน_ตัวอย่าง(PD-Sample)',
+            //     link: ''
+            // },
+            // {
+            //     id: 114,
+            //     label: 'โรงงาน_ธุรการฝ่ายผลิต(Admin)',
+            //     link: ''
+            // },
+            // {
+            //     id: 115,
+            //     label: 'โรงงาน_บริหารการผลิต',
+            //     link: ''
+            // },
+            // {
+            //     id: 116,
+            //     label: 'โรงงาน_ผูกลวด(Plating)',
+            //     link: ''
+            // },
+            // {
+            //     id: 117,
+            //     label: 'โรงงาน_ฝังทั่วไป(Assembling)',
+            //     link: ''
+            // },
+            // {
+            //     id: 118,
+            //     label: 'โรงงาน_ลงลูกยาง_ยิงแป๊ก',
+            //     link: ''
+            // },
+            // {
+            //     id: 119,
+            //     label: 'โรงงาน_ล่อนงาน(Tumbling)',
+            //     link: ''
+            // },
+            // {
+            //     id: 120,
+            //     label: 'โรงงาน2_QC2( บรรจุ)',
+            //     link: ''
+            // },
+            // {
+            //     id: 121,
+            //     label: 'โรงงาน2_แต่ง2(Filling)',
+            //     link: ''
+            // },
+            // {
+            //     id: 122,
+            //     label: 'โรงงาน2_แผนกขัด2(Extra)',
+            //     link: ''
+            // },
+            // {
+            //     id: 123,
+            //     label: 'โรงงาน2_ธุรการฝ่ายผลิตJJ(Admin)',
+            //     link: ''
+            // },
+            // {
+            //     id: 124,
+            //     label: 'โรงงาน2_ฝังทั่วไป(Assembling)',
+            //     link: ''
+            // },
+            // {
+            //     id: 125,
+            //     label: 'โรงงาน2_ฝังพลอย2(Setting)',
+            //     link: ''
+            // },
+            // {
+            //     id: 126,
+            //     label: 'โรงงาน3_QC3( บรรจุ)',
+            //     link: ''
+            // },
+            // {
+            //     id: 127,
+            //     label: 'โรงงาน3_เจียรหิน/ จัดซื้อพลอย',
+            //     link: ''
+            // },
+            // {
+            //     id: 128,
+            //     label: 'โรงงาน3_เซ็นเตอร์หล่อ3(CenterCasting)',
+            //     link: ''
+            // },
+            // {
+            //     id: 129,
+            //     label: 'โรงงาน3_งานปั๊ม3(Stamping)',
+            //     link: ''
+            // },
+            // {
+            //     id: 130,
+            //     label: 'โรงงาน3_ฉีดเทียน3(Wax/Casting)',
+            //     link: ''
+            // },
+            // {
+            //     id: 131,
+            //     label: 'โรงงาน3_หล่อ3(Casting)',
+            //     link: ''
+            // },
         ]
     },
     {
         id: 25,
-        label: 'menuitems.utility.text',
+        label: 'พนักงานใหม่',
         icon: 'ri-profile-line',
         subItems: [
             {
                 id: 26,
-                label: 'menuitems.utility.list.starter',
+                label: 'ทดลองงาน',
                 link: ''
             },
             {
                 id: 27,
-                label: 'menuitems.utility.list.maintenance',
+                label: 'อนุมัติผ่านทดลองงาน',
                 link: ''
             },
             {
-                id: 28,
-                label: 'menuitems.utility.list.comingsoon',
-                link: ''
-            },
-            {
-                id: 29,
-                label: 'menuitems.utility.list.timeline',
-                link: ''
-            },
-            {
-                id: 30,
-                label: 'menuitems.utility.list.faqs',
-                link: ''
-            },
-            {
-                id: 31,
-                label: 'menuitems.utility.list.pricing',
-                link: ''
-            },
-            {
-                id: 32,
-                label: 'menuitems.utility.list.error404',
-                link: ''
-            },
-            {
-                id: 33,
-                label: 'menuitems.utility.list.error500',
+                id: 27,
+                label: 'บันทึกพนักงานใหม่',
                 link: ''
             },
         ]
     },
     {
         id: 36,
-        label: 'menuitems.components.text',
-        isTitle: true
+        label: 'แจ้งเตือน การลา',
+    icon:"ri-alert-line",
     },
-    {
-        id: 37,
-        label: 'menuitems.uielements.text',
-        icon: 'ri-pencil-ruler-2-line',
-        subItems: [
-            {
-                id: 38,
-                label: 'menuitems.uielements.list.alerts',
-                link: ''
-            },
-            {
-                id: 39,
-                label: 'menuitems.uielements.list.buttons',
-                link: ''
-            },
-            {
-                id: 40,
-                label: 'menuitems.uielements.list.cards',
-                link: ''
-            },
-            {
-                id: 41,
-                label: 'menuitems.uielements.list.carousel',
-                link: ''
-            },
-            {
-                id: 42,
-                label: 'menuitems.uielements.list.dropdowns',
-                link: ''
-            },
-            {
-                id: 43,
-                label: 'menuitems.uielements.list.grid',
-                link: ''
-            },
-            {
-                id: 44,
-                label: 'menuitems.uielements.list.images',
-                link: ''
-            },
-            {
-                id: 45,
-                label: 'menuitems.uielements.list.lightbox',
-                link: ''
-            }, {
-                id: 46,
-                label: 'menuitems.uielements.list.modals',
-                link: ''
-            }, {
-                id: 47,
-                label: 'menuitems.uielements.list.rangeslider',
-                link: ''
-            }, {
-                id: 48,
-                label: 'menuitems.uielements.list.sessiontimeout',
-                link: ''
-            },
-            {
-                id: 49,
-                label: 'menuitems.uielements.list.progressbar',
-                link: ''
-            }, {
-                id: 50,
-                label: 'menuitems.uielements.list.sweetalert',
-                link: ''
-            }, {
-                id: 51,
-                label: 'menuitems.uielements.list.tabs',
-                link: ''
-            }, {
-                id: 52,
-                label: 'menuitems.uielements.list.typography',
-                link: ''
-            }, {
-                id: 53,
-                label: 'menuitems.uielements.list.video',
-                link: ''
-            }, {
-                id: 54,
-                label: 'menuitems.uielements.list.general',
-                link: ''
-            }, {
-                id: 55,
-                label: 'menuitems.uielements.list.rating',
-                link: ''
-            }, {
-                id: 56,
-                label: 'menuitems.uielements.list.notifications',
-                link: ''
-            }
-        ]
-    },
-    {
-        id: 57,
-        label: 'menuitems.forms.text',
-        icon: 'ri-eraser-fill',
-        badge: {
-            variant: 'danger',
-            text: 'menuitems.forms.badge'
-        },
-        subItems: [
-            {
-                id: 58,
-                label: 'menuitems.forms.list.elements',
-                link: ''
-            },
-            {
-                id: 59,
-                label: 'menuitems.forms.list.validation',
-                link: ''
-            },
-            {
-                id: 60,
-                label: 'menuitems.forms.list.advanced',
-                link: ''
-            },
-            {
-                id: 61,
-                label: 'menuitems.forms.list.editor',
-                link: ''
-            },
-            {
-                id: 62,
-                label: 'menuitems.forms.list.fileupload',
-                link: ''
-            },
-            {
-                id: 63,
-                label: 'menuitems.forms.list.wizard',
-                link: ''
-            },
-            {
-                id: 64,
-                label: 'menuitems.forms.list.mask',
-                link: '/form/mask'
-            }
-        ]
-    },
-    {
-        id: 65,
-        label: 'menuitems.tables.text',
-        icon: 'ri-table-2',
-        subItems: [
-            {
-                id: 66,
-                label: 'menuitems.tables.list.basic',
-                link: ''
-            },
-            {
-                id: 67,
-                label: 'menuitems.tables.list.advanced',
-                link: ''
-            },
-        ]
-    },
-    {
-        id: 69,
-        label: 'menuitems.charts.text',
-        icon: 'ri-bar-chart-line',
-        subItems: [
-            {
-                id: 70,
-                label: 'menuitems.charts.list.apex',
-                link: ''
-            },
-            {
-                id: 71,
-                label: "menuitems.charts.list.chartjs",
-                link: ''
-            },
-            {
-                id: 72,
-                label: "menuitems.charts.list.chartist",
-                link: ''
-            },
-            {
-                id: 73,
-                label: "menuitems.charts.list.echart",
-                link: ''
-            }
-        ]
-    },
-    {
-        id: 74,
-        label: "menuitems.icons.text",
-        icon: 'ri-brush-line',
-        subItems: [
-            {
-                id: 75,
-                label: 'menuitems.icons.list.remix',
-                link: ''
-            },
-            {
-                id: 76,
-                label: "menuitems.icons.list.materialdesign",
-                link: ''
-            },
-            {
-                id: 77,
-                label: "menuitems.icons.list.dripicons",
-                link: ''
-            },
-            {
-                id: 78,
-                label: "menuitems.icons.list.fontawesome",
-                link: ''
-            }
-        ]
-    },
-    {
-        id: 79,
-        label: "menuitems.maps.text",
-        icon: 'ri-map-pin-line',
-        subItems: [
-            {
-                id: 80,
-                label: "menuitems.maps.list.googlemap",
-                link: ''
-            },
-            {
-                id: 81,
-                label: 'menuitems.maps.list.leaflet',
-                link: ''
-            }
-        ]
-    }
-]
+  {
+    id: 0,
+    label: "ระบบการจัดการ",
+    isTitle: true,
+  },
+  {
+    id: 14,
+    label: "menuitems.email.text",
+    icon: "ri-mail-send-line",
+    subItems: [
+      {
+        id: 15,
+        label: "menuitems.email.list.inbox",
+        link: "",
+      },
+      {
+        id: 16,
+        label: "menuitems.email.list.reademail",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 17,
+    label: "KPI",
+    icon: "ri-artboard-2-line",
+    link: "",
+  },
+  {
+    id: 17,
+    label: "OT",
+    icon: "dripicons-hourglass",
+    link: "",
+  },
+  {
+    id: 4,
+    label: "แชทฝ่ายบุคล",
+    icon: "ri-chat-1-line",
+    link: "",
+  },
+
+  {
+    id: 19,
+    label: "ระบบพนักงาน",
+    isTitle: true,
+  },
+  {
+    id: 20,
+    label: "รายการ พนักงาน",
+    icon: "ri-account-circle-line",
+    subItems: [
+      {
+        id: 100,
+        label: "พนักงานโรงงานทั้งหมด",
+        link: "/emp_f_all",
+      },
+      {
+        id: 101,
+        label: "พนักงานออฟฟิตทั้งหมด",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 25,
+    label: "พนักงานใหม่",
+    icon: "ri-profile-line",
+    subItems: [
+      {
+        id: 26,
+        label: "ทดลองงาน",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "อนุมัติผ่านทดลองงาน",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "บันทึกพนักงานใหม่",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 36,
+    label: "แจ้งเตือน การลา",
+    icon: "ri-alert-line",
+
+    subItems: [
+      {
+        id: 26,
+        label: "ลากิจ",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาป่วย",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาคลอด",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาฉุกเฉิน",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 36,
+    label: "อนุมัติการลา",
+    icon: "ri-creative-commons-nd-line",
+
+    subItems: [
+      {
+        id: 26,
+        label: "ลากิจ",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาป่วย",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาคลอด",
+        link: "",
+      },
+      {
+        id: 27,
+        label: "ลาฉุกเฉิน",
+        link: "",
+      },
+    ],
+  },
+
+  {
+    id: 36,
+    label: "Work For Home",
+    icon: "ri-home-wifi-line",
+
+    subItems: [
+      {
+        id: 26,
+        label: "คำขอ Work For Home",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "อนุมัติ Work For Home",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "รายงาน Work For Home",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 36,
+    label: "Daily Report",
+    icon: "ri-sticky-note-line",
+
+    subItems: [
+      {
+        id: 26,
+        label: "Work For Home",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "รายงาน Daily Report",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "แจ้งกลับ Daily Report",
+        link: "",
+      },
+    ],
+  },
+
+  {
+    id: 36,
+    label: "เวลาเข้าออกงาน",
+    icon: "ri-fingerprint-2-line",
+
+    subItems: [
+      {
+        id: 26,
+        label: "เข้างาน",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "เลิกงาน",
+        link: "",
+      },
+
+      {
+        id: 27,
+        label: "นำเข้ารายงาน",
+        link: "",
+      },
+    ],
+  },
+];

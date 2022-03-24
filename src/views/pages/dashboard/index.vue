@@ -3,12 +3,12 @@ import Layout from "../../layouts/main";
 import PageHeader from "@/components/page-header";
 
 import Stat from "./widget";
-import RevenueAnalytics from "./revenue";
+
 import SalesAnalytics from "./sales-analytics";
 import EarningReport from "./earning";
-import Sources from "./sources";
+
 import RecentActivity from "./recent-activity";
-import RevenueLocation from "./revenue-location";
+
 import Chat from "./chat";
 import Transaction from './transaction';
 
@@ -20,12 +20,12 @@ export default {
     Layout,
     PageHeader,
     Stat,
-    RevenueAnalytics,
+  
     SalesAnalytics,
     EarningReport,
-    Sources,
+ 
     RecentActivity,
-    RevenueLocation,
+ 
     Chat,
     Transaction
   },
@@ -34,7 +34,7 @@ export default {
       title: "Dashboard",
       items: [
         {
-          text: "Nazox"
+          text: "Jintai"
         },
         {
           text: "Dashboard",
@@ -52,7 +52,7 @@ export default {
     <div class="row">
       <div class="col-xl-8">
         <Stat />
-        <RevenueAnalytics />
+      
       </div>
       <div class="col-xl-4">
         <SalesAnalytics />
@@ -61,21 +61,21 @@ export default {
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <Sources />
+       <Chat />
       </div>
       <div class="col-lg-4">
         <RecentActivity />
       </div>
-      <div class="col-lg-4">
-        <RevenueLocation />
+      <div class="col-lg-12">
+             <Transaction />
       </div>
     </div>
     <div class="row">
       <div class="col-lg-4">
-        <Chat />
+
       </div>
       <div class="col-lg-8">
-        <Transaction />
+      
       </div>
     </div>
   </Layout>

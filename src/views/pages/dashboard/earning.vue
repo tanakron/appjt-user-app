@@ -87,16 +87,16 @@ export default {
           <i class="mdi mdi-dots-vertical"></i>
         </template>
         <!-- item-->
-        <b-dropdown-item>Sales Report</b-dropdown-item>
+        <b-dropdown-item>พนักงานทั้งหมด</b-dropdown-item>
         <!-- item-->
-        <b-dropdown-item>Export Report</b-dropdown-item>
+        <b-dropdown-item>รายชื่อพนักงาน Export </b-dropdown-item>
         <!-- item-->
-        <b-dropdown-item>Profit</b-dropdown-item>
+        <b-dropdown-item>เพิ่มพนักงาน</b-dropdown-item>
         <!-- item-->
-        <b-dropdown-item>Action</b-dropdown-item>
+        <b-dropdown-item>แก้ไข - พนักงาน</b-dropdown-item>
       </b-dropdown>
 
-      <h4 class="card-title mb-4">Earning Reports</h4>
+      <h4 class="card-title mb-4">พนักงานทั้งหมด</h4>
       <div class="text-center">
         <div class="row">
           <div class="col-sm-6">
@@ -111,8 +111,8 @@ export default {
                   :options="WeeklyEarning.chartOptions"
                 ></apexchart>
               </div>
-              <p class="text-muted text-truncate mb-2">Weekly Earnings</p>
-              <h5 class="mb-0">$2,523</h5>
+              <p class="text-muted text-truncate mb-2">เข้าใหม่</p>
+              <h5 class="mb-0">102</h5>
             </div>
           </div>
 
@@ -129,8 +129,8 @@ export default {
                 ></apexchart>
               </div>
 
-              <p class="text-muted text-truncate mb-2">Monthly Earnings</p>
-              <h5 class="mb-0">$11,235</h5>
+              <p class="text-muted text-truncate mb-2">พนักงานเก่า</p>
+              <h5 class="mb-0">613</h5>
             </div>
           </div>
         </div>

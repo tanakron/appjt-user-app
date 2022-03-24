@@ -7,75 +7,12 @@ export default {
     return {
       transactionData: [
         {
-          orderid: "#NZ1563",
-          date: "28 Mar, 2020",
-          billingname: "Frank Dean",
-          total: "$164",
-          paymentstatus: "Unpaid"
+         id: "0353",
+          date: "17/3/65",
+          name: "นางสาว  วนัสนันท์   สมทา",
+         datestart:"22/8/2007",
         },
-        {
-          orderid: "#NZ1564",
-          date: "28 Mar, 2020",
-          billingname: "Eddy Torres",
-          total: "$141",
-          paymentstatus: "Paid"
-        },
-        {
-          orderid: "#NZ1565",
-          date: "29 Mar, 2020",
-          billingname: "Jamison Clark",
-          total: "$123",
-          paymentstatus: "Paid"
-        },
-        {
-          orderid: "#NZ1566",
-          date: "30 Mar, 2020",
-          billingname: "Jewel Buckley",
-          total: "$112",
-          paymentstatus: "Paid"
-        },
-        {
-          orderid: "#NZ1567",
-          date: "31 Mar, 2020",
-          billingname: "Jeffrey Waltz",
-          total: "$105",
-          paymentstatus: "Unpaid"
-        },
-        {
-          orderid: "#NZ1568",
-          date: "01 Apr, 2020",
-          billingname: "Jefferson Allen",
-          total: "$160",
-          paymentstatus: "Chargeback"
-        },
-        {
-          orderid: "#NZ1569",
-          date: "02 Apr, 2020",
-          billingname: "Paul Jones",
-          total: "$183",
-          paymentstatus: "Paid"
-        },
-        {
-          orderid: "#NZ1570",
-          date: "03 Apr, 2020",
-          billingname: "Donald Bailey",
-          total: "$146",
-          paymentstatus: "Paid"
-        },
-        {
-          orderid: "#NZ1571",
-          date: "03 Apr, 2020",
-          billingname: "Jimmy Barker",
-          total: "$165",
-          paymentstatus: "Unpaid"
-        },
-        {
-          orderid: "#NZ1572",
-          date: "04 Apr, 2020",
-          billingname: "Walter Brown",
-          total: "$172",
-          paymentstatus: "Paid"
-        }
+       
       ],
       totalRows: 1,
       currentPage: 1,
@@ -86,11 +23,11 @@ export default {
       sortBy: "orderid",
       sortDesc: false,
       fields: [
-        { key: "orderid", sortable: true, label: "Order ID" },
+        { key: "id", sortable: true, label: "ID" },
         { key: "date", sortable: true },
-        { key: "billingname", sortable: true, label: "Billing Name" },
-        { key: "total", sortable: true, label: "Total" },
-        { key: "paymentstatus", sortable: true, label: "Payment Status" },
+        { key: "name", sortable: true, label: "Name" },
+        { key: "datestart", sortable: true, label: "Datestart" },
+     
         { key: "action" }
       ]
     };
@@ -128,16 +65,13 @@ export default {
           <i class="mdi mdi-dots-vertical"></i>
         </template>
         <!-- item-->
-        <b-dropdown-item>Sales Report</b-dropdown-item>
+        <b-dropdown-item>พนักงานทั้งหมด</b-dropdown-item>
         <!-- item-->
-        <b-dropdown-item>Export Report</b-dropdown-item>
-        <!-- item-->
-        <b-dropdown-item>Profit</b-dropdown-item>
-        <!-- item-->
-        <b-dropdown-item>Action</b-dropdown-item>
+        <b-dropdown-item>Export </b-dropdown-item>
+     
       </b-dropdown>
 
-      <h4 class="card-title mb-4">Latest Transactions</h4>
+      <h4 class="card-title mb-4">ราชื่อพนักงาน</h4>
       <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
           <div id="tickets-table_length" class="dataTables_length">

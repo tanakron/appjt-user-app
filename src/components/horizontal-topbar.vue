@@ -22,30 +22,11 @@ export default {
     return {
       languages: [
         {
-          flag: require("@/assets/images/flags/us.jpg"),
+          flag: require("@/assets/images/flags/thai.png"),
           language: "en",
           title: "English",
         },
-        {
-          flag: require("@/assets/images/flags/french.jpg"),
-          language: "fr",
-          title: "French",
-        },
-        {
-          flag: require("@/assets/images/flags/spain.jpg"),
-          language: "es",
-          title: "spanish",
-        },
-        {
-          flag: require("@/assets/images/flags/chaina.png"),
-          language: "zh",
-          title: "Chinese",
-        },
-        {
-          flag: require("@/assets/images/flags/arabic.png"),
-          language: "ar",
-          title: "Arabic",
-        },
+     
       ],
       current_language: "en",
     };
@@ -441,7 +422,7 @@ export default {
           <template v-slot:button-content>
             <img
               class
-              src="@/assets/images/flags/us.jpg"
+              src="@/assets/images/flags/thai.png"
               alt="Header Language"
               height="16"
             />
@@ -478,14 +459,14 @@ export default {
             <div class="row no-gutters">
               <div class="col">
                 <a class="dropdown-icon-item" href="javascript: void(0);">
-                  <img src="@/assets/images/brands/github.png" alt="Github" />
+                  <img src="" alt="Google" />
                   <span>{{ $t("navbar.dropdown.site.list.github") }}</span>
                 </a>
               </div>
               <div class="col">
                 <a class="dropdown-icon-item" href="javascript: void(0);">
                   <img
-                    src="@/assets/images/brands/bitbucket.png"
+                    src=""
                     alt="bitbucket"
                   />
                   <span>{{ $t("navbar.dropdown.site.list.github") }}</span>
@@ -494,7 +475,7 @@ export default {
               <div class="col">
                 <a class="dropdown-icon-item" href="javascript: void(0);">
                   <img
-                    src="@/assets/images/brands/dribbble.png"
+                    src=""
                     alt="dribbble"
                   />
                   <span>{{ $t("navbar.dropdown.site.list.dribbble") }}</span>

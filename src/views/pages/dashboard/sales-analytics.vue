@@ -43,7 +43,7 @@ export default {
           <option value="3">Jan</option>
         </select>
       </div>
-      <h4 class="card-title mb-4">Sales Analytics</h4>
+      <h4 class="card-title mb-4">รายงาน</h4>
 
       <div id="donut-chart" class="apex-charts"></div>
       <apexchart
@@ -57,7 +57,7 @@ export default {
         <div class="col-4">
           <div class="text-center mt-4">
             <p class="mb-2 text-truncate">
-              <i class="mdi mdi-circle text-primary font-size-10 mr-1"></i> Product A
+              <i class="mdi mdi-circle text-primary font-size-10 mr-1"></i> KPI
             </p>
             <h5>42 %</h5>
           </div>
@@ -65,7 +65,7 @@ export default {
         <div class="col-4">
           <div class="text-center mt-4">
             <p class="mb-2 text-truncate">
-              <i class="mdi mdi-circle text-success font-size-10 mr-1"></i> Product B
+              <i class="mdi mdi-circle text-success font-size-10 mr-1"></i> พนักงาน
             </p>
             <h5>26 %</h5>
           </div>
@@ -73,7 +73,7 @@ export default {
         <div class="col-4">
           <div class="text-center mt-4">
             <p class="mb-2 text-truncate">
-              <i class="mdi mdi-circle text-warning font-size-10 mr-1"></i> Product C
+              <i class="mdi mdi-circle text-warning font-size-10 mr-1"></i> แจ้งลา
             </p>
             <h5>42 %</h5>
           </div>
